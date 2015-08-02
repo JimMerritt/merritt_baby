@@ -1,0 +1,8 @@
+@mixin box_sizing {
+  box-sizing: border-box;
+}
+
+@mixin transition_timing {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
