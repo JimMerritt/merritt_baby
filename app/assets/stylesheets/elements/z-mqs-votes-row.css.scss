@@ -5,9 +5,16 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
   .all-the-votes .overlay-hover,
   .all-the-votes .all-the-votes-skew-right {
-    left: 39vw;
+    left: 40vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .all-the-votes .overlay-hover,
+  .all-the-votes .all-the-votes-skew-right {
+    left: 41vw;
   }
 }

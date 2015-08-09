@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  min-height: 3em;
+  min-height: 3.25rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -24,14 +24,14 @@
   }
 
   a {
-    color: $grey;
+    color: $coral;
     padding: 0.25em;
     position: absolute;
     font-family: $heading;
     font-size: 1.17em;
 
     &:hover {
-      background-color: $hover-bg;
+      background-color: $ltcoral;
     }
   }
 

@@ -4,10 +4,45 @@
   text-align: center;
 }
 
-#scrolling div {
-  display: none;
-}
+#scrolling {
+  overflow: hidden;
+  width: 100%;
 
-#scrolling div.active {
-  display: block;
+  ul {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    li {
+      display: inline-block;
+      width: 100%;
+      min-width: 100%;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+    }
+
+    p {
+      font-size: 175%;
+      width: 70%;
+      margin: 0 auto;
+
+      &:first-of-type {
+        font-weight: 700;
+        border-bottom: 1px solid $ltgrey;
+        margin-bottom: .75em;
+      }
+    }
+  }
 }

@@ -1,0 +1,22 @@
+.row.bgpara {
+  padding: 10vh 0;
+  background-image: image-url("chevron-bg.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  .wrapper {
+    
+    .para-box {
+      background: white;
+      padding: 5%;
+      width: 60%;
+      margin: auto;
+    }
+    
+    h1 {
+      margin-top: 0;
+      color: $blue;
+    }
+  }
+}
