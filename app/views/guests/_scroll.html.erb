@@ -1,0 +1,18 @@
+<% @guests = Guest.all %>
+<div class="row">
+  <div class="wrapper">
+    <div class="messages-scrolling-container">
+      <div id="scrolling">
+        <% @guests.each_with_index do |g, index| %>
+          <div class="<% if index == 0 %>active<% end %>">
+            <p><%= g.name %> says:</p>
+            <p><%= g.message %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+startScroll();
+</script>

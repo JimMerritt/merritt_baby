@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="wrapper">
+    <div class="messages-scrolling-container">
+      <ul>
+        <% @guests.each do |guest| %>
+          <tr>
+            <td><%= guest.name %></td>
+            <td><%= guest.message %></td>
+            <td><%= guest.boy %></td>
+            <td><%= guest.girl %></td>
+            <td><%= link_to 'Show', guest %></td>
+            <td><%= link_to 'Edit', edit_guest_path(guest) %></td>
+            <td><%= link_to 'Destroy', guest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

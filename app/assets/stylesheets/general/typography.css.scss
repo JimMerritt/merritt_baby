@@ -4,4 +4,30 @@
 
 a {
   color: blue;
+  font-family: $body;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading;
+  font-weight: 400;
+  margin: 0.45em 0;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p, li {
+  font-family: $body;
+  font-weight: 300;
+  line-height: 1.7;
 }

@@ -3,3 +3,11 @@
   margin: 0 auto;
   text-align: center;
 }
+
+#scrolling div {
+  display: none;
+}
+
+#scrolling div.active {
+  display: block;
+}

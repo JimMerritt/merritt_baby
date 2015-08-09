@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150808122001) do
+ActiveRecord::Schema.define(version: 20150809025039) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "add_gender_to_voters", force: :cascade do |t|
+    t.boolean  "boy"
+    t.boolean  "girl"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "guests", force: :cascade do |t|
+    t.string   "name"
+    t.string   "message"
+    t.boolean  "boy"
+    t.boolean  "girl"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "voters", force: :cascade do |t|
     t.string   "name"

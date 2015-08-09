@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="wrapper">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @guest.name %>
+    </p>
+
+    <p>
+      <strong>Message:</strong>
+      <%= @guest.message %>
+    </p>
+
+    <p>
+      <strong>Boy:</strong>
+      <%= @guest.boy %>
+    </p>
+
+    <p>
+      <strong>Girl:</strong>
+      <%= @guest.girl %>
+    </p>
+
+    <%= link_to 'Edit', edit_guest_path(@guest) %> |
+    <%= link_to 'Back', guests_path %>
+  </div>
+</div>
