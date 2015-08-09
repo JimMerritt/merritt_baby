@@ -1,0 +1,178 @@
+.votes-row {
+  height: 40vh;
+}
+
+.all-the-votes {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  overflow: hidden;
+  background: $blue;
+  text-align: center;
+  background-image: url(image-path("boy-bg.png"));
+  background-repeat: repeat;
+
+  h3, p {
+    @include transition_timing;
+
+    color: rgb(255, 255, 255);
+  }
+
+  h3 {
+    font-size: 150%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $body;
+    margin: 0;
+    padding: 1em 0;
+    border-bottom: 5px solid white;
+  }
+
+  p {
+    font-size: 300%;
+    font-weight: 700;
+  }
+}
+
+.votes {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 40%;
+  padding: 5%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.overlay-hover {
+  @include transition_timing;
+
+  min-width: 200vw;
+  min-height: 200vh;
+  position: absolute;
+  left: 37vw;
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+  z-index: 200;
+  overflow: hidden;
+
+  &:hover + .boy-votes-wrapper .votes-container {
+    margin-left: 0;
+  }
+
+  &:hover ~ .all-the-votes-skew-right {
+    left: 32vw;
+  }
+
+  &:hover ~ .girl-votes-wrapper > div {
+    width: 70%;
+    margin: 0 15%;
+
+    h3 {
+      font-size: 200%;
+    }
+
+    p {
+      font-size: 400%;
+    }
+  }
+}
+
+.all-the-votes-skew-right {
+  @include transition_timing;
+
+  min-width: 200vw;
+  min-height: 200vh;
+  position: absolute;
+  left: 37vw;
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+  background: $coral;
+  z-index: 0;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    background-image: url(image-path("girl-bg.png"));
+    background-repeat: repeat;
+  }
+}
+
+.votes-container {
+  @include transition_timing;
+
+  border: 5px solid white;
+  width: 50%;
+  position: relative;
+  margin: 0 25%;
+  padding: 0;
+}
+
+.boy-votes-wrapper {
+  @include transition_timing;
+  left: 0;
+
+  h3 {
+    background: $mdblue;
+  }
+
+  &:hover {
+    h3 {
+      font-size: 200%;
+    }
+
+    p {
+      font-size: 400%;
+    }
+  }
+
+  &:hover > div {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  &:hover + .girl-votes-wrapper > .votes-container {
+    margin-right: 0;
+  }
+
+  &:hover ~ .all-the-votes-skew-right {
+    left: 42vw;
+  }
+}
+
+.girl-votes-wrapper {
+  left: 50%;
+
+  h3 {
+    background: $mdcoral;
+  }
+}

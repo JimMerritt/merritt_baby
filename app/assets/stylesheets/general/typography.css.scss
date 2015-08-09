@@ -1,11 +1,15 @@
 * {
-  color: $dark-grey;
+  color: $grey;
 }
 
 a {
-  color: blue;
+  color: $coral;
   font-family: $body;
   font-weight: 300;
+  
+  &:hover {
+    background: $ltcoral;  
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

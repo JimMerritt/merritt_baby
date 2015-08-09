@@ -3,6 +3,6 @@
 }
 
 @mixin transition_timing {
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
 }
