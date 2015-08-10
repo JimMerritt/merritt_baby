@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor', group: :production
 gem 'puma'
 ruby "2.0.0"
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'

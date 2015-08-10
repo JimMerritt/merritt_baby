@@ -1,0 +1,80 @@
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.expandable {
+  margin-bottom: 2.5em;
+}
+
+.party {
+  
+  &:first-of-type {
+    margin-top: 2em;
+  }
+  
+  h3 {
+    text-align: center;
+    background-color: $grey;
+    font-family: $body;
+    text-transform: uppercase;
+    font-size: 125%;
+    color: white;
+    padding: .5em 0;
+    margin: 0;
+  }
+  
+  table {
+    width: 100%;
+    border: 1px solid $coral;
+    
+    tr:nth-child(odd) {
+      background: $ltgrey; 
+    }
+    
+    td {
+      border: 1px solid $grey;
+      
+      p {
+        padding: .5em 5%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.big-button {
+  padding: 1.5em;
+  font-size: 150%;
+  margin: 1em auto;
+  width: auto;
+  max-width: 50%;
+  border: 5px solid $coral;
+  display: block;
+  background: white;
+  text-align: center;
+}
+
+.row.blue {
+  padding: 3em 0;
+  background: $ltblue;
+
+  h3 {
+    color: white;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  a {
+    color: $blue;
+  }
+}

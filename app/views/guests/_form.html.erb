@@ -13,23 +13,23 @@
         </div>
       <% end %>
 
-        <%= f.label :name %><br>
+        <%= f.label :name %>
         <%= f.text_field :name %>
 
-        <%= f.label :message %><br>
+        <%= f.label :message %>
         <%= f.text_field :message %>
-        
-    <div class="radio-button">
-        <%= f.label :boy %><br>
-        <%= f.radio_button :boy, "boy", onClick: "validateBoy()" %>
-    </div>
-    <div class="radio-button">
-
-        <%= f.label :girl %><br>
-        <%= f.radio_button :girl, "girl", onClick: "validateGirl()" %>
-    </div>
+      <div class="radio-container">
+        <div class="radio-button">
+            <%= f.label :boy, "Of course it's a Boy!" %>
+            <%= f.radio_button :boy, "boy", onClick: "validateBoy()" %>
+        </div>
+        <div class="radio-button">
+            <%= f.label :girl, "Nope. It's totally a Girl!" %>
+            <%= f.radio_button :girl, "girl", onClick: "validateGirl()" %>
+        </div>
+      </div>
     
-        <%= f.submit %>
+        <%= f.submit 'Submit', :class => 'button' %>
     <% end %>
   </div>
 </div>

@@ -14,7 +14,11 @@
     <% flash.each do |message_type, message| %>
       <div class="row">
         <div class="wrapper">    
-          <div class="alert-<%= message_type %>"><%= message %></div>
+          <div class="alert-<%= message_type %>"><p><%= message %></p></div>
+          <!--
+            <div class="notice"><p>< notice ></p></div>
+            <div class="alert"><p>< alert ></p></div> 
+          -->
         </div>
       </div>
     <% end %>
@@ -25,6 +29,5 @@
       </div>
     <% end %>
   </div>
-  <%= render 'layouts/footer' %>
 </body>
 </html>

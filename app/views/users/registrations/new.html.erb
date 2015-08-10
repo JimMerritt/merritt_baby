@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="wrapper">
+    <h2>Sign up</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        
+        <div id="rsvp-error">
+          <p>Double check your code!</p>
+        </div>
+        <%= f.label :rsvp_code %><br />
+        <%= f.text_field :rsvp_code, :onBlur => 'userValidate()'  %>
+        
+        <div id="yaybaby">
+          <%= f.hidden_field :merritt, :value => "true" %>
+          <%= f.hidden_field :niestradt, :value => "false" %>
+        </div>
+    
+        <div id="babyparty">
+          <%= f.hidden_field :merritt, :value => "false" %>
+          <%= f.hidden_field :niestradt, :value => "true" %>
+        </div>
+    
+        <div id="button-wrapper">
+          <%= f.submit "Submit" %>
+        </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+    <script>
+      buttonHide();
+    </script>
+  </div>
+</div>

@@ -1,3 +1,65 @@
+@media screen and (max-width: 550px) {
+  .row {
+    
+    &.bgpara {
+      padding: 0;
+    }
+    
+    .wrapper {
+      max-width: 95%;
+      padding: 2.5%;
+
+      .para-box {
+        width: 95%;
+        padding: 2.5%;
+      }
+    }
+    
+    .messages-scrolling-container {
+      width: 90%;
+    }
+    
+    #scrolling ul p {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .overlay-hover {
+    display: none;
+  }
+
+  .all-the-votes,
+  .row.votes-row {
+    height: auto;
+    position: relative;
+  }
+
+  .votes {
+    width: 100%;
+    position: relative;
+  }
+
+  .votes.girl-votes-wrapper {
+    left: 0;
+    background-color: $coral;
+    background-image: url(image-path("girl-bg.png"));
+    background-repeat: repeat;
+  }
+
+  .all-the-votes-skew-right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 950px) {
+  .all-the-votes .overlay-hover,
+  .all-the-votes .all-the-votes-skew-right {
+    left: 33vw;
+  }
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .all-the-votes .overlay-hover,
   .all-the-votes .all-the-votes-skew-right {

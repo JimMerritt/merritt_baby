@@ -2,25 +2,77 @@ form {
   width: 100%;
   margin: 0 auto;
   color: $grey;
+  font-family: $body;
 
   input, label {
     width: 100%;
     display: block;
     margin: 0 auto;
+    padding: 0;
+  }
+
+  label {
+    margin-bottom: .5em;
   }
 
   input {
-    margin-bottom: 1.25em;
+    margin-bottom: 2.25em;
     background: rgb(250, 250, 250);
     border: 1px solid rgb(230, 230, 230);
     padding: 1.25em 0;
   }
-  
+
+  .radio-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+    margin: 2em 0;
+
+    .radio-button {
+      display: inline-block;
+      width: 50%;
+
+      label {
+        display: inline;
+        width: auto;
+        font-size: 125%;
+        margin-right: .5em;
+      }
+
+      input {
+        display: inline;
+        width: 5%;
+        margin: 0 auto;
+      }
+    }
+  }
+
   .button {
-    background-color: rgb(150, 150, 250);
+    @include transition_timing;
+
+    background-color: $grey;
+    color: white;
     text-align: center;
-    margin-top: 2.25em;
+    margin-top: 4.25em;
     width: 35%;
-    padding: 1.5em;
+    padding: 1em 0;
+    border-radius: 10px;
+    font-size: 100%;
+    font-family: $body;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    &:hover {
+      @include transition_timing;
+
+      background-color: $ltgrey;
+      color: $grey;
+      cursor: pointer;
+    }
   }
 }
