@@ -15,11 +15,10 @@ body {
 }
 
 .party {
-  
   &:first-of-type {
     margin-top: 2em;
   }
-  
+
   h3 {
     text-align: center;
     background-color: $grey;
@@ -30,18 +29,18 @@ body {
     padding: .5em 0;
     margin: 0;
   }
-  
+
   table {
     width: 100%;
     border: 1px solid $coral;
-    
+
     tr:nth-child(odd) {
-      background: $ltgrey; 
+      background: $ltgrey;
     }
-    
+
     td {
       border: 1px solid $grey;
-      
+
       p {
         padding: .5em 5%;
         margin: 0;
@@ -50,7 +49,7 @@ body {
   }
 }
 
-.big-button {
+a.big-button {
   padding: 1.5em;
   font-size: 150%;
   margin: 1em auto;
@@ -60,6 +59,10 @@ body {
   display: block;
   background: white;
   text-align: center;
+  
+  &:hover {
+    background: $ltcoral;
+  }
 }
 
 .row.blue {
@@ -69,11 +72,11 @@ body {
   h3 {
     color: white;
   }
-  
+
   p {
     color: white;
   }
-  
+
   a {
     color: $blue;
   }

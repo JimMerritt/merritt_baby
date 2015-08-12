@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading;
   font-weight: 400;
   margin: 0.45em 0;
+  
+  a {
+    font-family: $heading; 
+  }
 }
 
 h1 {
@@ -40,6 +44,10 @@ h3 {
   font-size: 2em;
 }
 
+h4 {
+  font-size: 1.2em;
+}
+
 p, li {
   font-family: $body;
   font-weight: 300;
@@ -48,4 +56,8 @@ p, li {
 
 p {
   margin-bottom: 1em;
+}
+
+em {
+  font-style: italic;
 }
