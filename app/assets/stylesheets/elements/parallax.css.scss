@@ -6,7 +6,6 @@
   background-attachment: fixed;
 
   .wrapper {
-    
     .para-box {
       background: white;
       padding: 5%;
@@ -14,10 +13,22 @@
       max-width: 750px;
       margin: auto;
     }
-    
+
     h1 {
       margin-top: 0;
       color: $blue;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .row.bgpara {
+    .wrapper {
+      padding: 5% 0;
+      .para-box {
+        width: 85%;
+        padding: 5%;
+      }
     }
   }
 }

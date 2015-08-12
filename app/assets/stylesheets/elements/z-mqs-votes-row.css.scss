@@ -6,13 +6,9 @@
     }
     
     .wrapper {
-      max-width: 95%;
-      padding: 2.5%;
-
-      .para-box {
-        width: 95%;
-        padding: 2.5%;
-      }
+      width: 90%;
+      max-width: 90%;
+      padding: 5% 0;
     }
     
     .messages-scrolling-container {
@@ -20,7 +16,7 @@
     }
     
     #scrolling ul p {
-      width: 95%;
+      width: 80%;
     }
   }
 }
@@ -38,7 +34,9 @@
 
   .votes {
     width: 100%;
+    max-width: 100%;
     position: relative;
+    padding: 5% 0;
   }
 
   .votes.girl-votes-wrapper {
