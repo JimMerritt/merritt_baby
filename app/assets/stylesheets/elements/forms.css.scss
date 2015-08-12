@@ -67,12 +67,14 @@ form {
     text-transform: uppercase;
     letter-spacing: 0.1em;
 
-    &:hover {
-      @include transition_timing;
+    @media screen and (max-width: 800) {
+      &:hover {
+        @include transition_timing;
 
-      background-color: $ltgrey;
-      color: $grey;
-      cursor: pointer;
+        background-color: $ltgrey;
+        color: $grey;
+        cursor: pointer;
+      }
     }
   }
 }

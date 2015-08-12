@@ -76,24 +76,26 @@
   z-index: 200;
   overflow: hidden;
 
-  &:hover + .boy-votes-wrapper .votes-container {
-    margin-left: 0;
-  }
-
-  &:hover ~ .all-the-votes-skew-right {
-    left: 32vw;
-  }
-
-  &:hover ~ .girl-votes-wrapper > div {
-    width: 70%;
-    margin: 0 15%;
-
-    h3 {
-      font-size: 200%;
+  @media screen and (max-width: 800) {
+    &:hover + .boy-votes-wrapper .votes-container {
+      margin-left: 0;
     }
 
-    p {
-      font-size: 400%;
+    &:hover ~ .all-the-votes-skew-right {
+      left: 32vw;
+    }
+
+    &:hover ~ .girl-votes-wrapper > div {
+      width: 70%;
+      margin: 0 15%;
+
+      h3 {
+        font-size: 200%;
+      }
+
+      p {
+        font-size: 400%;
+      }
     }
   }
 }
@@ -141,33 +143,38 @@
 
 .boy-votes-wrapper {
   @include transition_timing;
+
   left: 0;
 
   h3 {
     background: $mdblue;
   }
 
-  &:hover {
-    h3 {
-      font-size: 200%;
+  @media screen and (max-width: 800) {
+    &:hover {
+      h3 {
+        font-size: 200%;
+      }
+
+      p {
+        font-size: 400%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800) {
+    &:hover > div {
+      width: 70%;
+      margin: 0 15%;
     }
 
-    p {
-      font-size: 400%;
+    &:hover + .girl-votes-wrapper > .votes-container {
+      margin-right: 0;
     }
-  }
 
-  &:hover > div {
-    width: 70%;
-    margin: 0 15%;
-  }
-
-  &:hover + .girl-votes-wrapper > .votes-container {
-    margin-right: 0;
-  }
-
-  &:hover ~ .all-the-votes-skew-right {
-    left: 42vw;
+    &:hover ~ .all-the-votes-skew-right {
+      left: 42vw;
+    }
   }
 }
 

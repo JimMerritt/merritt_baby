@@ -59,15 +59,18 @@ a.big-button {
   display: block;
   background: white;
   text-align: center;
-  
-  &:hover {
-    background: $ltcoral;
+
+  @media screen and (max-width: 800) {
+    &:hover {
+      background: $ltcoral;
+    }
   }
 }
 
 .row.blue {
   padding: 3em 0;
   background: $ltblue;
+  text-align: center;
 
   h3 {
     color: white;
