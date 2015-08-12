@@ -20,5 +20,8 @@ function startScroll() {
   
   for(i=0; i < 5; i++) {
     marginShift();
+    $("#scrolling ul").animate({
+      marginLeft: 0,
+    }, 4000).delay(1000);    
   }
 }
