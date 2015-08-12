@@ -60,7 +60,7 @@ a.big-button {
   background: white;
   text-align: center;
 
-  @media screen and (max-width: 800) {
+  @media screen and (min-width: 800) {
     &:hover {
       background: $ltcoral;
     }
