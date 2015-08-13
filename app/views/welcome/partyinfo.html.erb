@@ -1,8 +1,9 @@
 <div class="row bgpara">
   <div class="wrapper ">
     <div class="para-box">
-      <h1>Party Time!</h1>
-      <p>Excellent! We're going to have a couple parties. The info for each is below.</p>
+      <h1>Party Time! Excellent!</h1>
+      <p>So here's the deal with the parties. We would love to have one super crazy over-the-top party with everyone, but we just can't handle that much fun so we split it up into two equally fun, super cool events. The first event is being hosted by the Merritts and will be ladies only. The second event is being hosted by the Niestradts and Schlemmers and will be both ladies and gents.</p>
+      <p>We have the party info. for each listed below. If you are unsure as to which you should attend, check the date from the invite. If that still doesn't work, contact your party representative. If they are unavailable, you can email <%= mail_to 'highfive@merrittbaby.com', 'highfive@babymerritt.com' %>. Hopefully it doesn't come to that, but if it does, that's a real email. I promise.</p>
     </div>
   </div>
 </div>
@@ -10,11 +11,11 @@
 <div class="row">
   <div class="wrapper">
     <div class="expandable party">
-      <h3>Merritt Party</h3>
+      <h3>Merritt Party - 09-13-2015</h3>
       <table cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td>
-            <p><strong>Hosted By:</strong></p>
+            <p><strong>Hosts:</strong></p>
           </td>
           <td>
             <p>A Bunch of Merritts</p>
@@ -41,17 +42,27 @@
             <p><strong>Where:</strong></p>
           </td>
           <td>
-            <p>5932 Rocky Pass, Cincinnati OH 45069</p>
+            <p>5932 Rocky Pass, West Chester OH 45069</p>
+          </td>
+        </tr>        
+        <tr>
+          <td>
+            <p><strong>Map:</strong></p>
+          </td>
+          <td>
+            <p><%= link_to 'Google Maps Link', "https://www.google.com/maps/place/5932+Rocky+Pass,+West+Chester+Township,+OH+45069", target: 'blank' %></p>
           </td>
         </tr>
       </table>      
     </div>
+
     <div class="expandable party">
-      <h3>Niestradt Party</h3>
+      <h3>Niestradt Party - 09-26-2015</h3>
+      <p><strong>Notes:</strong> This party will be for guys, gals, kids and dogs, so all are welcome. Except dogs. No dogs. There will be food and some drink but it is encouraged to bring a little extra if you're going to be hitting the sauce pretty hard. There will be games and fun-times for both ladies and gents, so make sure you come prepped for some baby-related activities.</p>      
       <table>
         <tr>
           <td>
-            <p><strong>Hosted By:</strong></p>
+            <p><strong>Hosts:</strong></p>
           </td>
           <td>
             <p>Gayle Niestradt & Jill Schlemmer</p>
@@ -79,6 +90,14 @@
           </td>
           <td>
             <p>711 Huntersknoll, Cincinnati OH 45230</p>
+          </td>
+        </tr>        
+        <tr>
+          <td>
+            <p><strong>Map:</strong></p>
+          </td>
+          <td>
+            <p><%= link_to 'Google Maps Link', "https://www.google.com/maps/place/711+Huntersknoll+Ln,+Cincinnati,+OH+45230", target: 'blank' %></p>
           </td>
         </tr>
       </table>
