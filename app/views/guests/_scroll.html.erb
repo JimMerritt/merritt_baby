@@ -4,11 +4,13 @@
     <div class="messages-scrolling-container">
       <div id="scrolling">
         <ul>
-          <% @guests.shuffle.each do |g, index| %>
+          <% @guests.shuffle.each do | g | %>
+            <% if g.name.present? && g.message.present? %>
               <li>
                 <p><%= g.name %> says:</p>
                 <p><%= g.message %></p>
               </li>
+            <% end %>
           <% end %>
         </ul>
       </div>
